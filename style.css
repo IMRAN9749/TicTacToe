@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color:rgb(224, 243, 236);
+}
+
+nav {
+  height: 30px;
+  background-color: rgb(40, 21, 38);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  font-size: 30px;
+  font-family: 'Varela Round', sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+}
+.containeritem{
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.container{
+  display: grid;
+  grid-template-rows: repeat(3,10vw);
+  grid-template-columns: repeat(3,10vw);
+  position: relative;
+}
+.box{
+  display: flex;
+  border:2px solid rgb(10, 9, 9);
+  font-size: 8vw;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: rgb(0, 6, 128);
+}
+
+.box:hover{
+  background-color:white;
+}
+
+.gameinfo{
+  padding: 22px;
+}
+
+.info{
+ padding: 32px;
+ font-size: 25px;
+}
+
+.pic img{
+  width:0px;
+  transition: width 1s ease-in-out;
+  background-color:rgb(224, 243, 236);
+}
+
+.bt-0{
+  border-top:0;
+}
+.bl-0{
+  border-left:0;
+}
+.br-0{
+  border-right:0;
+}
+.bb-0{
+  border-bottom:0;
+}
+
+#reset{
+  height: 3rem;
+  padding: 0 30px;
+  margin: 20px 30px;
+  background-color:rgb(93, 22, 187);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: 'Varela Round', sans-serif;
+}
+
+#reset:hover{
+  background-color: rgb(20, 1, 77);
+}
+
+@media screen and (max-width:800px) {
+    .containeritem{
+      flex-wrap: wrap;
+    }
+    .gameinfo{
+      margin-top: 35px;
+      margin-left: 65px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .gameinfo h1{
+      font-size: 1.5rem;
+    }
+    .container{
+      grid-template-rows: repeat(3,20vw);
+      grid-template-columns: repeat(3,20vw);
+    }
+    nav{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+}
+
